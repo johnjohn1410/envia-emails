@@ -1,4 +1,3 @@
-import { Expression } from './node_modules/acorn/dist/acorn.d';
 import { createTransport } from 'nodemailer';
 import dotenv from 'dotenv';
 import process from 'process';
@@ -31,7 +30,7 @@ let transporter = createTransport({
 app.post('/send-email', (req, res) => {
     const { email, assunto, mensagem } = req.body;
 
-    const mensagemFormatada = mensagem.replace(/\n/g, '<br>'); // Substitui quebras de linha por <br>
+    const mensagemFormatada = mensagem.replace(/\n/g, '<br>');
 
 const mailOptions = {
     from: process.env.EMAIL,
