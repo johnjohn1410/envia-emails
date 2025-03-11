@@ -1,0 +1,36 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    background-color: #f2f2f2;
+    justify-content: center;
+}
+
+.container{
+    display: flex;
+    justify-content:center;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    align-items: center;
+}
+a{
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    top: 130%;
+    transform: translate(-50%, -50%);
+    color: black;
+    transition: .2s ease;
+}
+a:hover{
+    color: #00d26a;
+}
+span{
+    height: fit-content;
+}
